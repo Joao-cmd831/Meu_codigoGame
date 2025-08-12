@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minha Aplicação frontend</title>
+</head>
+<body>
+    <canvas id="meu_canvas" width="500" height="500"></canvas>
+    <script type="text/javascript">
+        // Referenciando o Canvas//
+        var canvas = document.getElementById('meu_canvas');
+        var context = canvas.getContext('2d');//obtendo contexto gráfico8//
+        context.fillStyle = 'white';//Preenche o retângulo de vermelho//
+        context.fillRect(260, 100, 100, 100);//sempre coloque os valores//
+        context.lineWidth = 3;//preeenche o retângulo de azul//
+        context.strokeStyle ='blue';
+        context.strokeRect(260, 100, 100, 100);
+        context.beginPath();
+        context.moveTo(75, 250);
+        context.lineTo(150, 50);
+        context.lineTo(225, 250);
+        context.lineTo(50, 120);
+        context.lineTo(250, 120);
+        context.lineTo(75, 250);
+        context.lineWidth = 2;
+        context.strokeStyle ='blue';
+        context.fillStyle ='white'
+
+        context.fill();
+
+        context.stroke();
+    </script>
+    
+</body>
+</html>
